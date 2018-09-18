@@ -32,8 +32,7 @@ void Update () {
 		
 	
 //This Code Makes The Character Jump
-if(input.GetKeyDown(KeyCode.Space)&& grounded)
-    {
+if(input.GetKeyDown(KeyCode.Space)&& grounded){
         Jump();
     }
     
