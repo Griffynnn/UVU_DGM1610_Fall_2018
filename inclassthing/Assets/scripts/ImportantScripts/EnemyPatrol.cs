@@ -44,12 +44,12 @@ public class EnemyPatrol : MonoBehaviour {
 		}
 
 		if (MoveRight){
-			transform.localScale = new Vector3(-5f,5f,1f);//this is scale transforms on x y and z so enemy doesnt shrink
+			transform.localScale = new Vector3(-5f,5f,5f);//this is scale transforms on x y and z so enemy doesnt shrink
 			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		else {
-			transform.localScale = new Vector3(5f,5f,1f);
-			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			transform.localScale = new Vector3(5f,5f,5f);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		}
 	}
