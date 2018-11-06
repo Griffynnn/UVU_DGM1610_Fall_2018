@@ -65,6 +65,12 @@ if(Input.GetKey (KeyCode.A)){
 
 GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
+    //Player Flip
+if (GetComponent<Rigidbody2D>().velocity.x > 0)
+    transform.localscale = new Vector3(5f,5f,5f);
+
+else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+    transform.localscale = new Vector3(-5f,5f,5f);
 }
 public void Jump()
 {
