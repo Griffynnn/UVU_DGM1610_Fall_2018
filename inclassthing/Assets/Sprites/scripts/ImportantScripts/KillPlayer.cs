@@ -15,7 +15,7 @@ public LevelManager LevelManager;
 
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.name == "Cat Sprite"){
+		if(other.name == "Player"){
 			LevelManager.RespawnPlayer();
 		}
 	}
