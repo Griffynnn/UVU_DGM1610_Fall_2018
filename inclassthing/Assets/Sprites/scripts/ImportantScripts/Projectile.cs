@@ -36,8 +36,12 @@ public class Projectile : MonoBehaviour {
 			Destroy (other. gameObject);//the G is lowercase because its not a classtype, this gameObject is a variable so the g is lowercase
 			ScoreManager.AddPoints (PointsForKill);
 		}
-	Instantiate(projectile, transform.position, transform.rotation);
-	Destroy (gameObject);
-	
+
+		Destroy (gameObject);
 	}
+	void OnCollisionEnter2D(Collision2D other){
+		Instantiate(ProjectileParticle, transform.position, transform.rotation);
+		Destroy (gameObject);
+	}
+
 }
