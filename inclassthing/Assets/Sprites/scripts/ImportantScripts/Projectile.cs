@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
-	public Rigidbody2D PC;
+	public Rigidbody2D Player;
 
 	public GameObject EnemyDeath;
 
@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if(PC.transform.localScale.x < 0)
+		if(Player.transform.localScale.x < 0)
 		Speed = -Speed;
 	}
 //localscale x is going left and right, 0 means if your not going one way your going the other. changing the speed of the object based on the player

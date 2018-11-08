@@ -529,11 +529,10 @@ GameObject:
   - component: {fileID: 845136748}
   - component: {fileID: 845136751}
   - component: {fileID: 845136750}
-  - component: {fileID: 845136753}
   - component: {fileID: 845136752}
   - component: {fileID: 845136754}
   m_Layer: 0
-  m_Name: Cat Sprite
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,23 +663,6 @@ MonoBehaviour:
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 272
---- !u!114 &845136753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 845136747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e253e978ddd8c74980865c24b4961ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentCheckPoint: {fileID: 1843144514}
-  Player: {fileID: 845136750}
-  DeathParticle: {fileID: 1523591201}
-  RespawnParticle: {fileID: 1523591201}
-  RespawnDelay: 2
-  PointPentaltyOnDeath: 10
 --- !u!114 &845136754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0c97ef212d5754cbabc24348aad797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelManager: {fileID: 845136753}
+  LevelManager: {fileID: 0}
 --- !u!61 &1027295085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1339,7 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0c97ef212d5754cbabc24348aad797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelManager: {fileID: 845136753}
+  LevelManager: {fileID: 0}
 --- !u!1 &1523591201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6144,6 +6126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1783029780}
+  - component: {fileID: 1783029781}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6164,6 +6147,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783029781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1783029779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e253e978ddd8c74980865c24b4961ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentCheckPoint: {fileID: 1843144514}
+  Player: {fileID: 845136750}
+  Player2: {fileID: 845136747}
+  DeathParticle: {fileID: 1523591201}
+  RespawnParticle: {fileID: 1523591201}
+  RespawnDelay: 2
+  PointPentaltyOnDeath: 10
 --- !u!1 &1843144514
 GameObject:
   m_ObjectHideFlags: 0
