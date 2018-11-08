@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class ArraysHomework : MonoBehaviour {
 
-	public int Pet = [6];
+	// public int Pet = [6];
 
-	public string = [Pet];
+	// public string = [Pet];
 
 
-	// Use this for initialization
-	void Start () {
+	// // Use this for initialization
+	// void Start () {
 
-		Pet = string 
+	// 	Pet = string 
 
-		Pet[0] = ["cat"];
-		Pet[1] = ["dog"];
-		Pet[2] = ["bird"];
-		Pet[3] = ["rabbit"];
-		Pet[4] = ["lizard"];
-		Pet[5] = ["snake"];
-		print = ["Pet is" + ];
+	// 	Pet[0] = ["cat"];
+	// 	Pet[1] = ["dog"];
+	// 	Pet[2] = ["bird"];
+	// 	Pet[3] = ["rabbit"];
+	// 	Pet[4] = ["lizard"];
+	// 	Pet[5] = ["snake"];
+	// 	print = ["Pet is" + ];
 
-	}
+	// }
 	
-	// Update is called once per frame
-	void Update () {
+	// // Update is called once per frame
+	// void Update () {
 		
-	}
+	// }
 }
