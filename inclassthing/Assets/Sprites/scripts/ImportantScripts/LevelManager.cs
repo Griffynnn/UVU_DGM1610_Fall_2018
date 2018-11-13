@@ -39,7 +39,7 @@ private bool respawnRunning;
 
 	public IEnumerator RespawnPlayerCo(){
 
-		respawnRunning = true;
+		respawnRunsning = true;
 
 		//Genderate Death Particle
 		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
