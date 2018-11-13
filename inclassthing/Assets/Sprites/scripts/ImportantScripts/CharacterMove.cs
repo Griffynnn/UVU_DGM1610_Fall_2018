@@ -35,17 +35,17 @@ void Update () {
 		
 	
 //This Code Makes The Character Jump
-if(Input.GetKeyDown(KeyCode.Space)&& Grounded){
+    if(Input.GetKeyDown(KeyCode.Space)&& Grounded){
         Jump();
     }
     
 //Double Jump Code
-if(Grounded){
-DoubleJump = false;
-}
-if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
-    Jump();
-    DoubleJump = true;
+    if(Grounded){
+        DoubleJump = false;
+    }
+    if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
+       Jump();
+        DoubleJump = true;
 }
 
 //Non-Stick Player
@@ -66,14 +66,15 @@ if(Input.GetKey (KeyCode.A)){
 GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
     //Player Flip
-// if (GetComponent<Rigidbody2D>().velocity.x > 0)
-//     transform.localScale = new Vector3(5f,5f,5f);
+    if (GetComponent<Rigidbody2D>().velocity.x > 0)
+        transform.localScale = new Vector3(0.2345604f,0.2345604f,0.2345604f);
 
-// else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-//     transform.localScale = new Vector3(-5f,5f,5f);
+    else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+        transform.localScale = new Vector3(-0.2345604f,0.2345604f,0.2345604f);
 }
 public void Jump()
 {
+    print("jumping");
     GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
 
 }

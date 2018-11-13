@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
-	public Rigidbody2D Player;
+	public GameObject Player;
 
 	public GameObject EnemyDeath;
 
@@ -14,12 +14,20 @@ public class Projectile : MonoBehaviour {
 	public int PointsForKill;
 
 	public GameObject projectile;
+	
+	public int TimeOut;
 
 	// Use this for initialization
 	void Start () {
+		Player = GameObject.Find("Player");
+
+		EnemyDeath = Resources.Load("Prefab/Particle System") as GameObject;
+		ProjectileParticle = Resources.Load("Prefab/Particle System") as GameObject;
 
 		if(Player.transform.localScale.x < 0)
 		Speed = -Speed;
+
+		Destroy(gameObject,TimeOut);
 	}
 //localscale x is going left and right, 0 means if your not going one way your going the other. changing the speed of the object based on the player
 //change the direction of the bullet depending on what direction the player is facing	

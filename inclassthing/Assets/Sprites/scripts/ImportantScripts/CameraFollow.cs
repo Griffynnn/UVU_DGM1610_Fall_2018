@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// public class CameraFollow : MonoBehaviour {
+public class CameraFollow : MonoBehaviour {
 
-// 	public PlayerController Cat Sprite;
+	public GameObject Player;
 
-// 	public bool isFollowing;
+	public bool isFollowing;
 
-// 	//Camera Position Offset
-// 	public float xOffset;
-// 	public float yOffset;
+	//Camera Position Offset
+	public float xOffset;
+	public float yOffset;
 
-// 	// Use this for initialization
-// 	void Start () {
-// 		Cat Sprite = FindOBjectOFType<CharacterMove>();
+	// Use this for initialization
+	void Start () {
+		// Player = FindOBjectOfType<CharacterMove>();
 
-// 		isFollowing = true;
+		isFollowing = true;
 		
-// 	}
+	}
 	
-// 	// Update is called once per frame
-// 	void Update () {
-// 		if(isFollowing){
-// 			transform.position = new Vector3(Cat Sprite.transform.position.x + xOffset, Cat Sprite.transform.position.y + yOffset, transform.position.z);
+	// Update is called once per frame
+	void Update () {
+		if(isFollowing){
+			transform.position = new Vector3(Player.transform.position.x + xOffset, Player.transform.position.y + yOffset, transform.position.z);
 
-// 		}
+		}
 		
-// 	}
-// }
+	}
+}

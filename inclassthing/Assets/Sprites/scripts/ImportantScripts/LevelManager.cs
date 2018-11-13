@@ -21,6 +21,8 @@ public int PointPentaltyOnDeath;
 //Store Gravity Value
 private float GravityStore;
 
+private bool respawnRunning;
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,15 +31,21 @@ private float GravityStore;
 	
 
 	public void RespawnPlayer(){
-		StartCoroutine("RespawnPlayerCo");
+		if(!respawnRunning){
+			StartCoroutine("RespawnPlayerCo");
+		}
+		
 	}
 
 	public IEnumerator RespawnPlayerCo(){
+
+		respawnRunning = true;
+
 		//Genderate Death Particle
 		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
 		//Hide Player
 		//player.enabled = false;
-		Player2.SetActive(false);
+		//Player2.SetActive(false);
 		Player.GetComponent<Renderer> ().enabled = false;
 		//Gravity Reset
 		GravityStore = Player.GetComponent<Rigidbody2D>().gravityScale;
@@ -55,10 +63,12 @@ private float GravityStore;
 		Player.transform.position = CurrentCheckPoint.transform.position;
 		//Show Player
 		//Player.enabled = true;
-		Player2.SetActive(true);
+		//Player2.SetActive(true);
 		Player.GetComponent<Renderer> ().enabled = true;
 		//Spawn Particle
 		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
+
+		respawnRunning = false;
 
 	}
 
