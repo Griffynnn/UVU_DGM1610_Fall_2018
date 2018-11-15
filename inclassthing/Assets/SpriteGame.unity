@@ -1352,11 +1352,6 @@ Prefab:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 360d224ed04f4cc4cba81a03536535f1, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1523591201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1487983357}
 --- !u!1 &1621218780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,8 +1571,10 @@ MonoBehaviour:
   CurrentCheckPoint: {fileID: 1843144514}
   Player: {fileID: 845136750}
   Player2: {fileID: 845136747}
-  DeathParticle: {fileID: 1523591201}
-  RespawnParticle: {fileID: 1523591201}
+  DeathParticle: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1,
+    type: 2}
+  RespawnParticle: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1,
+    type: 2}
   RespawnDelay: 2
   PointPentaltyOnDeath: 10
 --- !u!1 &1843144514
