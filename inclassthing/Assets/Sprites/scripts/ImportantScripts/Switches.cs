@@ -5,7 +5,7 @@ using UnityEngine;
 public class Switches : MonoBehaviour {
 
 	// public int num;
-	// public string name;
+	// public string num;
 
 	// // Use this for initialization
 	// void Start () {
@@ -17,26 +17,26 @@ public class Switches : MonoBehaviour {
 	// 		print("Boo! 10 is best");
 	// 	}
 
-	// 	// switch(num){
+	// 	switch(num){
 			
-	// 	// 	case 1:
-	// 	// 		print("you picked" + num);
-	// 	// 		break;
-	// 	// case 2:
-	// 	// 		print("you picked" + num);
-	// 	// 		break;
-	// 	// case 3:
-	// 	// 		print("you picked" + num);
-	// 	// 		break;
-	// 	// case 4:
-	// 	// 		print("you picked" + num);
-	// 	// 		break;			
-	// 	// case 5:
-	// 	// 		print("you picked" + num);
-	// 	// 		break;
-	// 	// default:
-	// 	// print("I dont understand" + num);
-	// 	// break;
+	// 		case 1:
+	// 			print("you picked" + num);
+	// 			break;
+	// 	case 2:
+	// 			print("you picked" + num);
+	// 			break;
+	// 	case 3:
+	// 			print("you picked" + num);
+	// 			break;
+	// 	case 4:
+	// 			print("you picked" + num);
+	// 			break;			
+	// 	case 5:
+	// 			print("you picked" + num);
+	// 			break;
+	// 	default:
+	// 	print("I dont understand" + num);
+	// 	break;
 
 	// 	switch(name){
 	// 		case Jason:
@@ -60,8 +60,7 @@ public class Switches : MonoBehaviour {
 	// 	}
 	// }
 
-	// // Update is called once per frame
+	// Update is called once per frame
 	// void Update () {
 		
-	// }
-}
+	}
