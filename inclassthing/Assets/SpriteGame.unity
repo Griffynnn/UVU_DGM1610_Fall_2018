@@ -1805,7 +1805,7 @@ MonoBehaviour:
   RespawnParticle: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1,
     type: 2}
   RespawnDelay: 2
-  PointPentaltyOnDeath: 10
+  PointPentaltyOnDeath: 5
 --- !u!114 &1783029782
 MonoBehaviour:
   m_ObjectHideFlags: 0
