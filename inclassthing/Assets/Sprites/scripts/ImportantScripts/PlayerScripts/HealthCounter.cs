@@ -12,12 +12,14 @@ public class HealthCounter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Health = 3;
 	}
 	
 	//Update is called once per frame
 	void Update () {
-		
+		if (Health > 3){
+			Health = 3;
+		}
 		
 	}		
 }
