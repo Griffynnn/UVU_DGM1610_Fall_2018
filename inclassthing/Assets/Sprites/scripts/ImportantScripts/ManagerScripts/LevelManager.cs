@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour {
+
+public UnityEvent myEvent;
 
 public GameObject CurrentCheckPoint;
 public Rigidbody2D Player;
@@ -34,6 +37,7 @@ private bool respawnRunning;
 		if(!respawnRunning){
 			StartCoroutine("RespawnPlayerCo");
 		}
+		myEvent.Invoke();
 		
 	}
 

@@ -4,28 +4,18 @@ using UnityEngine;
 
 public class AmmoManager : MonoBehaviour {
 
-	 	public static int Ammo;
+	 	public int Ammo = 0;
+		public int maxAmmo = 10;
+		public int ammoToAdd = 1;
 
- 		Text AmmoText;
+ 		public Text AmmoText;
 
-	// Use this for initialization
-	void Start () {
-		AmmoText = GetComponent<Text>();
-
-		
-		Ammo = 0;
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+	public void AddAmmo (){
 		if (Ammo < 0)
 			Ammo = 0;
+		Ammo += ammoToAdd;
 		AmmoText.text = " " + Ammo;
-	}
-
-	public static void AddPoints (int PointsToAdd){
-		Ammo += PointsToAdd;
+		print(Ammo);
 	}
 
 }

@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HealthCounter : MonoBehaviour {
 
+	public GameObject DeathScreen;
+	public UnityEvent DeathEvent;
 	public GameObject Health1;
 	public GameObject Health2;
 	public GameObject Health3;
@@ -21,5 +24,35 @@ public class HealthCounter : MonoBehaviour {
 			Health = 3;
 		}
 		
+	}
+
+	public void SubtractHealth()
+	{
+		Health--; //health = health - 1
+
+		switch(Health)
+		{
+			case 3:
+				Health1.SetActive(true);
+				Health2.SetActive(true);
+				Health3.SetActive(true);
+				break;
+			case 2:
+				Health1.SetActive(true);
+				Health2.SetActive(true);
+				Health3.SetActive(false);
+				break;
+			case 1:
+				Health1.SetActive(true);
+				Health2.SetActive(false);
+				Health3.SetActive(false);
+				break;
+			case 0:
+				Health1.SetActive(false);
+				Health2.SetActive(false);
+				Health3.SetActive(false);
+				DeathScreen.SetActive(true);
+				break;
+		}
 	}		
 }
