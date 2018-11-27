@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e933461383dedcc4c9c879cb1184f969
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hallowen Inline
+  fontNames:
+  - Hallowen Inline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 978d258390acfb64086bc704c1195049, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
