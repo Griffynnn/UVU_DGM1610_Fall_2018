@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212086394770794854}
   - component: {fileID: 58750184091962688}
   - component: {fileID: 50604032200689376}
+  - component: {fileID: 114154633318034636}
   m_Layer: 11
   m_Name: Projectile
   m_TagString: Untagged
@@ -77,6 +78,25 @@ CircleCollider2D:
   m_Offset: {x: 0.0000009536743, y: -0.00000011920929}
   serializedVersion: 2
   m_Radius: 0.10000002
+--- !u!114 &114154633318034636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065748529069600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4327948a13c4c4cab9818d23522e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
+  Player: {fileID: 0}
+  EnemyDeath: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1, type: 2}
+  ProjectileParticle: {fileID: 1674182383276784, guid: 360d224ed04f4cc4cba81a03536535f1,
+    type: 2}
+  PointsForKill: 0
+  projectile: {fileID: 0}
+  TimeOut: 5
 --- !u!212 &212086394770794854
 SpriteRenderer:
   m_ObjectHideFlags: 1

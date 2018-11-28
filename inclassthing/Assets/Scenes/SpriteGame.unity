@@ -199,7 +199,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -210,7 +210,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 154917962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.45, y: 0, z: 0}
+  m_LocalPosition: {x: 3.98, y: 0, z: 0}
   m_LocalScale: {x: 1617.2882, y: 1617.2882, z: 1617.2882}
   m_Children:
   - {fileID: 725792864}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 806699197}
   - component: {fileID: 806699201}
   m_Layer: 10
-  m_Name: Coin Sprite
+  m_Name: HealthPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,7 +911,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1783029782}
+        m_MethodName: AddHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ammoEvent:
@@ -1246,7 +1257,7 @@ GameObject:
   - component: {fileID: 890121226}
   - component: {fileID: 890121229}
   m_Layer: 10
-  m_Name: Coin Sprite (1)
+  m_Name: AmmoPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2418,7 +2429,7 @@ GameObject:
   - component: {fileID: 1461155600}
   m_Layer: 11
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

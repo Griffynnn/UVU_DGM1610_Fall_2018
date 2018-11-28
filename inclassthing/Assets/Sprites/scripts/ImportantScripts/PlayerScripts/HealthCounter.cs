@@ -55,4 +55,32 @@ public class HealthCounter : MonoBehaviour {
 				break;
 		}
 	}		
+	public void AddHealth(){
+		Health = Health + 1;
+
+		switch(Health){
+
+			case 3:
+				Health1.SetActive(true);
+				Health2.SetActive(true);
+				Health3.SetActive(true);
+				break;
+
+			case 2:
+				Health1.SetActive(true);
+				Health2.SetActive(true);
+				Health3.SetActive(false);
+				break;
+			case 1:
+				Health1.SetActive(true);
+				Health2.SetActive(false);
+				Health3.SetActive(false);
+				break;
+			case 0:
+				Health1.SetActive(false);
+				Health2.SetActive(false);
+				Health3.SetActive(false);
+				break;
+		}
+	}
 }
