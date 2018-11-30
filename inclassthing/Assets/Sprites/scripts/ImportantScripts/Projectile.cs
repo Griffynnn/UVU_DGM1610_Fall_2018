@@ -40,6 +40,8 @@ public class Projectile : MonoBehaviour {
 			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
 			Destroy (other. gameObject);//the G is lowercase because its not a classtype, this gameObject is a variable so the g is lowercase
 			ScoreManager.AddPoints (PointsForKill);
+			GetComponent<LootBox>().DropLoot();
+			GameObject.Find("GameManager").GetComponent<EnemyRespawn>().SpawnEnemy();
 		}
 
 		Destroy (gameObject);

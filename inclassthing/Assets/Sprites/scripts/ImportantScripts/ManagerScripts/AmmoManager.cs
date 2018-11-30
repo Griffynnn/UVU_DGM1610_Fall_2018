@@ -10,20 +10,11 @@ public class AmmoManager : MonoBehaviour {
 
  		public Text AmmoText;
 	void Update(){
-		if (Ammo <= 0){
-			Ammo = 0;
-			Player.GetComponent<PlayerShoot>().enabled = false;
-		}
-		if (Ammo >= 10){
-			Ammo = 10;
-		}
+
 	}
-	public void AddAmmo (){
-	
-		if (Ammo >= 10){
-			Ammo = 10;
-		}
-		Ammo += ammoToAdd;
+	public void ChangeAmountAmmo (int amount){
+
+		Ammo = Ammo + amount;
 		AmmoText.text = " " + Ammo;
 		print(Ammo);
 	}
