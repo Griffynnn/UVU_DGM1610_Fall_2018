@@ -38,13 +38,15 @@ public class Projectile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Enemy"){
 			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
-			Destroy (other. gameObject);//the G is lowercase because its not a classtype, this gameObject is a variable so the g is lowercase
-			ScoreManager.AddPoints (PointsForKill);
+			Destroy (other.gameObject);//the G is lowercase because its not a classtype, this gameObject is a variable so the g is lowercase
+			GameObject.Find("GameManager").GetComponent<ScoreManager>().AddPoints(PointsForKill);
+			// ScoreManager.AddPoints (PointsForKill);
 			GetComponent<LootBox>().DropLoot();
 			GameObject.Find("GameManager").GetComponent<EnemyRespawn>().SpawnEnemy();
 		}
 
 		Destroy (gameObject);
+
 	}
 	void OnCollisionEnter2D(Collision2D other){
 		Instantiate(ProjectileParticle, transform.position, transform.rotation);

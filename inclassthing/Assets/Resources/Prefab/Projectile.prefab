@@ -114,7 +114,7 @@ MonoBehaviour:
   CoinDrop: {fileID: 0}
   LootCrate:
   - {fileID: 1635254222208964, guid: d925a9bafe36695489782ae70086ff71, type: 2}
-  - {fileID: 1497169843299702, guid: 06f9066dc09cf944e9807b9d3587ea12, type: 2}
+  - {fileID: 1902259165267058, guid: 06f9066dc09cf944e9807b9d3587ea12, type: 2}
   - {fileID: 1479859889162998, guid: 9778a54c66ba18745ad8bad39e076236, type: 2}
   Loot: []
 --- !u!212 &212086394770794854

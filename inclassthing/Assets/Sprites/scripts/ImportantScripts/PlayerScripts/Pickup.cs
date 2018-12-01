@@ -5,9 +5,8 @@ using UnityEngine.Events;
 
 public class Pickup : MonoBehaviour {
 
-	public UnityEvent healthEvent;
-	public UnityEvent ammoEvent;
-	public UnityEvent coinEvent;
+	public GameObject GameManager;
+
 
 	public enum PICKUP{
 		Health,
@@ -17,23 +16,28 @@ public class Pickup : MonoBehaviour {
 
 	public PICKUP pickupType;
 
+	public void Start(){
+		GameManager = GameObject.Find("GameManager");
+	}
+
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		switch(pickupType)
 		{
 			case PICKUP.Health:
-				healthEvent.Invoke();
+				GameManager.GetComponent<HealthCounter>().AddHealth();
 				print("you gained a life");
 				break;
 			case PICKUP.Ammo:
-				ammoEvent.Invoke();
+				GameManager.GetComponent<AmmoManager>().ChangeAmountAmmo(1);
 				print("you got +1 ammo");
 				break;
 			case PICKUP.Coin:
-				coinEvent.Invoke();
+				GameManager.GetComponent<ScoreManager>().AddPoints(5);
 				print("you got some points!");
 				break;
 		}
+		Destroy(gameObject);
 	}
 
 }

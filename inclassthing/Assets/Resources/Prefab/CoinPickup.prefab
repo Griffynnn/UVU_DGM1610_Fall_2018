@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4023027552426636}
   - component: {fileID: 212522272114388768}
   - component: {fileID: 58302290364695266}
-  - component: {fileID: 114208204215942314}
   - component: {fileID: 114534749380350846}
   m_Layer: 10
   m_Name: CoinPickup
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1635254222208964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3681483, y: 0.67111075, z: -99.40002}
+  m_LocalPosition: {x: 3.3681483, y: 0.67111075, z: 0}
   m_LocalScale: {x: 2.6599, y: 2.6599, z: 2.6599}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,18 +57,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.099999994
---- !u!114 &114208204215942314
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1635254222208964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90b0d518ff6482747af4910908f33572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointsToAdd: 5
 --- !u!114 &114534749380350846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,32 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f7f3bbb4a63a0498dcde2b45f5b522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ammoEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: AddAmmo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  coinEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  GameManager: {fileID: 0}
   pickupType: 2
 --- !u!212 &212522272114388768
 SpriteRenderer:

@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour {
 
+private ScoreManager ScoreManager;
+
 public UnityEvent myEvent;
 
 public GameObject CurrentCheckPoint;
@@ -30,6 +32,7 @@ private bool respawnRunning;
 	// Use this for initialization
 	void Start () {
 		//player = FindObjectOfType<Rigidbody2D> ();
+		ScoreManager = GetComponent<ScoreManager>();
 	}
 	
 

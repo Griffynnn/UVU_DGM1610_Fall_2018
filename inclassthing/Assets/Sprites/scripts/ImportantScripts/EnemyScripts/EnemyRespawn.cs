@@ -8,7 +8,8 @@ public class EnemyRespawn : MonoBehaviour {
 	public GameObject Enemy;
 	public float WaitTime;
 
-	public void SpawnEnemy(){//all methods are always capitalized
+	public void SpawnEnemy(){
+		print("SpawningEnemy");				//all methods are always capitalized
 		StartCoroutine(WaitForSpawn());
 	}
 

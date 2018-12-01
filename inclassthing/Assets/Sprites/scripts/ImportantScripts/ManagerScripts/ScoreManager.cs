@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
- 	public static int Score;
+ 	public int Score;
 	public int WinScore;
- 	Text ScoreText;
+ 	public Text ScoreText;
 	public Text WinText;
 
 
@@ -15,8 +15,7 @@ void Awake(){
 	Time.timeScale = 1;
 }
 	// Use this for initialization
-	void Start () {
-		ScoreText = GetComponent<Text>();
+	void Start (){
 
 		Score = 0;
 		
@@ -39,7 +38,7 @@ void Awake(){
 	}
 }
 
-	public static void AddPoints (int PointsToAdd){
+	public void AddPoints (int PointsToAdd){
 		Score += PointsToAdd;
 	}
 
