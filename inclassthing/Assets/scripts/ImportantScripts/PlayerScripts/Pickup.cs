@@ -11,7 +11,8 @@ public class Pickup : MonoBehaviour {
 	public enum PICKUP{
 		Health,
 		Ammo,
-		Coin
+		Coin,
+		Life
 	}
 
 	public PICKUP pickupType;
@@ -35,6 +36,10 @@ public class Pickup : MonoBehaviour {
 			case PICKUP.Coin:
 				GameManager.GetComponent<ScoreManager>().AddPoints(5);
 				print("you got some points!");
+				break;
+			case PICKUP.Life:
+				GameManager.GetComponent<LivesToWin>().CollectLives();
+				print("you have Lives");
 				break;
 		}
 		Destroy(gameObject);

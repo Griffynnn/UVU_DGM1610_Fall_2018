@@ -51,6 +51,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(true);
 			Life8.SetActive(true);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 7:
 			Life1.SetActive(true);
@@ -62,6 +63,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(true);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 6:
 			Life1.SetActive(true);
@@ -73,6 +75,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 5:
 			Life1.SetActive(true);
@@ -84,6 +87,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 4:
 			Life1.SetActive(true);
@@ -95,6 +99,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 3:
 			Life1.SetActive(true);
@@ -106,6 +111,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 2:
 			Life1.SetActive(true);
@@ -117,6 +123,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 1:
 			Life1.SetActive(true);
@@ -128,6 +135,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 		case 0:
 			Life1.SetActive(false);
@@ -139,6 +147,7 @@ public class LivesToWin : MonoBehaviour {
 			Life7.SetActive(false);
 			Life8.SetActive(false);
 			Life9.SetActive(false);
+			WinScreen.SetActive(false);
 			break;
 			}
 		}
