@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50604032200689376}
   - component: {fileID: 114154633318034636}
   - component: {fileID: 114892186106586494}
+  - component: {fileID: 247009999024058796}
   m_Layer: 11
   m_Name: Projectile
   m_TagString: Untagged
@@ -61,7 +62,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!58 &58750184091962688
@@ -163,3 +164,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!247 &247009999024058796
+ConstantForce2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065748529069600}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 10
