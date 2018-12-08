@@ -42,7 +42,7 @@ public class Projectile : MonoBehaviour {
 			GameObject.Find("GameManager").GetComponent<ScoreManager>().AddPoints(PointsForKill);
 			// ScoreManager.AddPoints (PointsForKill);
 			GetComponent<LootBox>().DropLoot();
-			GameObject.Find("GameManager").GetComponent<EnemyRespawn>().SpawnEnemy();
+			// GameObject.Find("GameManager").GetComponent<EnemyRespawn>().SpawnEnemy();
 		}
 
 		Destroy (gameObject);

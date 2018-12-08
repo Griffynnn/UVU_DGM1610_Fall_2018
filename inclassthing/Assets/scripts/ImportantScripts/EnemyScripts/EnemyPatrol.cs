@@ -22,11 +22,15 @@ public class EnemyPatrol : MonoBehaviour {
 	//Edge Check
 	private bool NotAtEdge;
 	public Transform EdgeCheck;
+	private float scalex;
+	private float scaley;
+
 	//This Edge Check code will check to see if enemy is at edge or not at edge, which is why its using a bool 
 
 	// Use this for initialization
 	void Start () {
-		
+		scalex = transform.localScale.x;
+		scaley = transform.localScale.y;
 	}
 	
 	// Update is called once per frame
@@ -44,11 +48,11 @@ public class EnemyPatrol : MonoBehaviour {
 		}
 
 		if (MoveRight){
-			transform.localScale = new Vector3(-5f,5f,5f);//this is scale transforms on x y and z so enemy doesnt shrink
+			transform.localScale = new Vector2(-scalex, scaley);//this is scale transforms on x y and z so enemy doesnt shrink
 			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		else {
-			transform.localScale = new Vector3(5f,5f,5f);
+			transform.localScale = new Vector2(scalex, scaley);
 			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 		}
