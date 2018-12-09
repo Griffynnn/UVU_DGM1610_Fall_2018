@@ -3,6 +3,7 @@ guid: d6fddeb0f66ce914abdab09f55f73bac
 TextureImporter:
   fileIDToRecycleName:
     21300000: catlifesprite
+    21300002: healthcat
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,13 +94,33 @@ TextureImporter:
         width: 425
         height: 401
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1180dd05822ddf145b5d20bac5113ac6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthcat
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 391
+        width: 369
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca29f94ad7688c45a73a9f15010d642
       vertices: []
       indices: 
       edges: []
